@@ -1,5 +1,7 @@
 'use client' ;
 
+import Link from 'next/link';
+
 import {useState , useEffect} from 'react';
 
 interface Post {
@@ -40,14 +42,17 @@ export default function Article() {
 
     return (
         <div className="container">
+            <Link href="/">Accueil</Link>
             <h1>Notre Blog</h1>
 
            <div className="card">
                 {posts.map((item) => (
                 <article key={item.id} className="card-item">
                     <h2>{item.title}</h2>
-                    <p>{item.body}</p>
                     <p>Post ID : {item.id}</p>
+                    <p>{item.body.substring(0,50)}</p>
+                    <Link href={`/blog/${item.id}`} >Lire plus ...</Link>
+                    
                 </article>
                 ))}
             </div>

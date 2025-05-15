@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import Link from "next/link"
 
 interface ArticleDetailsProps {
     params: { id: string };
@@ -18,10 +19,14 @@ interface ArticleDetailsProps {
   
     return (
       <div className="container">
-        <h1>{data.title}</h1>
-        <p>{data.body}</p>
-        <p>recuperation de l'id {data.id}</p>
+        <div className="card">
+          <h1>{data.title}</h1>
+          <p>{data.body}</p>
+          <p>recuperation de l'id {data.id}</p>
+        </div>
+        <Link href="/blog">Tous les articles</Link>
       </div>
+
     );
   }
   

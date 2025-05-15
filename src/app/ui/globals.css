@@ -114,3 +114,23 @@ article{
 
 }
 
+.nav-links{
+ display: flex;
+ flex-direction: row;
+ gap : 1rem;
+ justify-content: flex-end; 
+ align-items: center;
+}
+
+
+.nav-link{
+  color : white;  
+  text-decoration: none;
+  padding: 0.5rem 1rem ;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.active{
+  background-color:#555 ;
+}

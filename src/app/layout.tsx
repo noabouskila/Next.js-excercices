@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./ui/globals.css";
 import { inter , geistSans, geistMono } from "./ui/font";
+import NavLinks from "./ui/nav-links";
 
 
 // metadata
@@ -22,6 +23,10 @@ export default function RootLayout({
       >
         <header>
           <h1>Mon site </h1>
+          <div className="nav-links">
+            <NavLinks />
+          </div>
+          
         </header>
       
         {children}

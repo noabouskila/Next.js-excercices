@@ -1,8 +1,16 @@
+import Link from "next/link";
+
+
+
 export default function Login() {
     return (
         <div>
+          
+            <div className="container">
             <h1>Page de connexion</h1>
-            
-        </div>
+             <Link href="../forget-password">Mot de passe oublié ? </Link>
+            </div>
+            </div>
+           
     );
 }

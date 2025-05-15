@@ -6,6 +6,7 @@ import styles from '@/app/ui/home.module.css'
 import { useState } from "react";
 import clsx from "clsx";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -119,6 +120,7 @@ export default function Home() {
 
     <article>
       <h2>Bienvenue sur note site !</h2>
+      <Link href="/blog">Blog</Link>
     </article>
 
     </>
