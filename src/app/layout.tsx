@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./ui/globals.css";
-import { inter , geistSans, geistMono } from "./ui/font";
+import { inter  } from "./ui/font"; // import de la police Inter
+// import { GeistSans, GeistMono } from "./ui/font"; // pas encore dispo
 import NavLinks from "./ui/nav-links";
 
 
@@ -19,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.className}  antialiased`}
+        className={` ${inter.className} }   antialiased`}
+        //  ${geistSans.variable} ${geistMono.variable
       >
         <header>
           <h1>Mon site </h1>
