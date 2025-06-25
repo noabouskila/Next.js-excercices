@@ -17,8 +17,9 @@ export default function PostComponent({title , id , body}: {title: string, id: n
     return (
         <div className='card'>
             <article key={id} className="card-item">
-                <h2>{title}</h2>
-                <p>Post ID : {id}</p>
+                <h2>Post ID : {id}</h2>
+                <h3>titre : {title}</h3>
+               
                 <p>{ isTrue ?  body  : body.substring(0,50)}</p>
             
                 {
